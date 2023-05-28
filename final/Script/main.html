@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>phaser3</title>
+   <script src="https://cdn.jsdelivr.net/npm/phaser@3.52.0/dist/phaser.js"></script>
+</head>
+<body>
+
+  <div id="game"></div>
+   
+  <script>
+
+  const config = {
+  type: Phaser.AUTO,
+  width: 800,
+  height: 600,
+  backgroundColor: '#87CEEB',
+  parent: 'game',
+  scene: {
+    preload: preload,
+    create: create,
+    update: update
+  },
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 200 },
+      debug: false
+    }
+  }
+}
+
+const game = new Phaser.Game(config)
+
+function preload () 
+{
+
+}
+
+function create () 
+{
+
+}
+
+function update ()
+{
+
+}
+</script>
+
+</body>
+</html>
